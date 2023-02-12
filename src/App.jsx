@@ -35,11 +35,17 @@ function App() {
         <input type="file" accept="image/*" onChange={handleChange} />
         <button onClick={handleSubmit}>Upload to Firebase</button>
       </div>
+
       {
         downloadUrl &&
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div style={{
+          display: 'flex', flexDirection: 'column'
+          , backgroundColor: 'gray', padding: 5, borderRadius: 10, marginTop: 10
+        }}>
           <img src={downloadUrl} alt="firebase-image" />
-          <a href={downloadUrl}>{downloadUrl}</a>
+          <div style={{ backgroundColor: 'black', borderRadius: 10, marginTop: 10, textAlign: 'center' }}>
+            <a href={downloadUrl} style={{ color: 'white' }}>{downloadUrl}</a>
+          </div>
         </div>
       }
     </div>
