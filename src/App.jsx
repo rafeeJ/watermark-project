@@ -33,7 +33,7 @@ function App() {
     <div>
       <div style={{ backgroundColor: 'gray', padding: 5, borderRadius: 10 }}>
         <input type="file" accept="image/*" onChange={handleChange} />
-        <button onClick={handleSubmit} disabled={file.length === 0 ? true : false}>Upload to Firebase</button>
+        <button onClick={handleSubmit} disabled={file.length === 0 ? true : false}>Upload!</button>
       </div>
 
       {
